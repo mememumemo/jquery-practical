@@ -3,7 +3,7 @@ $(function(){
   autoplay: true,
   dots: true,
   speed: 1500,
-  arrows: false,
+  arrows: true,
   fade: true,
   pauseOnHover: false
 });
@@ -79,10 +79,12 @@ $(function(){
     const imgSrc = $(this).attr('src'); 
     $('#modal-img').attr('src', imgSrc); 
     $('#modal').fadeIn(); 
+    $('#back-btn').fadeOut();
   });
 
   $('.close').on('click', function(){
     $('#modal').fadeOut(); 
+     $('#back-btn').fadeIn();
   });
 
   $('.modal-content').on('click', function(e){
