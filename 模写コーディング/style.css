@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+body{
+  color: #000000;
+  background-color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 34px;
+  align-items: center;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 960px;
+}
+
+nav{
+  display: block;
+}
+
+nav .menu{
+  display: flex;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav li{
+  margin:20px 40px 0px 40px;
+}
+
+#MyProfile{
+   border: 1px solid black;
+   padding: 5px 20px;
+   margin: 0 0 0 20px;
+}
+
+
+.header a,
+.header a:link,
+.header a:visited,
+.header a:active 
+.header a:hover{
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+#MAIN{
+  display: flex;
+  justify-content: center;
+}
+
+.carouselImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#CAMERA{
+  width: 100%;
+  height: 100%;
+}
+
+.fadein{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.65s ease;
+}
+
+.fadein.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#ABOUT{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.ABOUT-CONTENT{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.ABOUT-p{
+  margin: 50px 0 30px;
+}
+
+#ABOUT h1{
+  font-size: 34px;
+  margin:0;
+  padding: 30px 0 60px;
+}
+
+#ABOUT img{
+  border-radius: 50%;
+  height: 282px;
+  width: 282px;
+}
+
+.ABOUT-p ul{
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.ABOUT-p p{
+  font-size: 24px;
+  margin-right: 150px;
+  font-weight: bold;
+}
+
+#Works{
+  margin-bottom: 50px;
+  margin-top: 100px;
+  text-align: center;
+  
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.modal-content img {
+  position: absolute;
+  width: 80%;
+  max-width: 800px; 
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20PX;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#Works h1{
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.Works-content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.niigata{
+  width: 240px;
+}
+
+.niigata img{
+  width: 100%;
+}
+
+.niigata p{
+  text-align: left;
+  font-size: 18px;
+}
+
+#back-btn {
+ display: none;
+
+ padding: 28px 24px;
+ background-color: black;
+ color: white;
+ text-decoration: none;
+ border-radius: 50%;
+ position: fixed;
+ bottom: 38px;
+ right: 20px;
+}
+
+footer{
+  margin: 100px 0 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+
+  
+  .header{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 15px 0;
+  width: 100%;
+  }
+
+  .header nav{
+    display: flex;
+  }
+
+  nav li{
+  margin: 0 10px;
+  font-size: 21px;
+}
+
+  #MyProfile{
+    font-size: 28px;
+    padding: 0px 20px;
+  }
+
+  #CAMERA{
+  width: 100%;
+  height: 100%;
+}
+
+#ABOUT{
+  margin-top: 0px
+}
+
+
+.ABOUT-CONTENT{
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.ABOUT-p{
+  margin: 0;
+}
+
+#ABOUT h1{
+  font-size: 28px;
+  margin-top: 0;
+  
+}
+
+#ABOUT img{
+  height: 100%;
+  width: 100%;
+
+}
+
+.ABOUT-p ul{
+  font-size: 18px;
+  margin-left: 40px;
+  margin-top: 10px;
+  padding: 0 30px;
+  text-align: left;
+}
+
+.ABOUT-p p{
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 170px;
+  margin-top: 0;
+  padding: 0 16px;
+  
+}
+
+.Works-content{
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+#Works{
+  margin:0 10px 0 10px;
+}
+
+#Works h1{
+  font-size: 28px;
+}
+
+.niigata{
+  width: 100%;
+}
+
+.niigata img{
+  width: 100%;
+  
+}
+
+.niigata p{
+  font-size: 18px;
+  margin-top: 0;
+  text-align: center;
+}
+
+footer{
+  margin: 30px 0;
+}
+}
